@@ -6,11 +6,11 @@ import { styles } from './styles'
 import { Text } from '~/features/ui/components/Text'
 import { fontsStyles } from '~/features/ui/theme/fontsStyles'
 import { useStyles } from '~/features/ui/theme/hooks/useStyles'
-const DashboardScreen = () => {
+const Home = () => {
   const { container } = useStyles(styles)
   return (
     <View style={container}>
-      <Text>DashboardScreen</Text>
+      <Text>Home</Text>
       <Text style={{ ...fontsStyles.h0 }}>Header</Text>
       <Text style={{ ...fontsStyles.body }}>body</Text>
       <Text style={{ ...fontsStyles.bodySmallBold }}>body</Text>
@@ -18,4 +18,4 @@ const DashboardScreen = () => {
   )
 }
 
-export { DashboardScreen }
+export { Home }

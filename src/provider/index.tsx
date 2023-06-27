@@ -1,5 +1,6 @@
 import { useFonts } from 'expo-font'
 import { SplashScreen } from 'expo-router'
+import { useEffect } from 'react'
 
 import { ThemeProvider } from '~/contexts/Theme'
 
@@ -12,10 +13,11 @@ export const Provider = ({ children }) => {
     'Poppins-SemiBold': require('assets/fonts/Poppins-SemiBold.ttf'),
   })
 
-  return (
-    <ThemeProvider>
-      {!fontsLoaded && <SplashScreen />}
-      {fontsLoaded && children}
-    </ThemeProvider>
-  )
+  SplashScreen.preventAutoHideAsync()
+
+  useEffect(() => {
+    if (fontsLoaded) SplashScreen.hideAsync()
+  }, [fontsLoaded])
+
+  return <ThemeProvider>{fontsLoaded && children}</ThemeProvider>
 }

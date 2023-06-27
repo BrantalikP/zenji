@@ -1,7 +1,1 @@
-import { Redirect } from 'expo-router'
-
-const StartPage = () => {
-  return <Redirect href="/dashboard" />
-}
-
-export default StartPage
+export { Home as default } from '../src/features/home/screens/Home'
