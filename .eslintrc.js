@@ -19,5 +19,5 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['!.storybook'],
+  ignorePatterns: ['!.storybook', 'src/features/api/wanikani/**'],
 }
