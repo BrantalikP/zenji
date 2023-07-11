@@ -1,7 +1,9 @@
+import { QueryClientProvider } from '@tanstack/react-query'
 import { useFonts } from 'expo-font'
 import { SplashScreen } from 'expo-router'
 import { useEffect } from 'react'
 
+import { queryClient } from '~/config/queryClient'
 import { ThemeProvider } from '~/contexts/Theme'
 
 export const Provider = ({ children }) => {
@@ -19,5 +21,11 @@ export const Provider = ({ children }) => {
     if (fontsLoaded) SplashScreen.hideAsync()
   }, [fontsLoaded])
 
-  return <ThemeProvider>{fontsLoaded && children}</ThemeProvider>
+  if (!fontsLoaded) return null
+
+  return (
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    </ThemeProvider>
+  )
 }

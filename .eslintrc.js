@@ -1,8 +1,15 @@
 module.exports = {
-  extends: ['universe', 'universe/shared/typescript-analysis', 'plugin:storybook/recommended'],
-  Plugin: ['storybook'],
+  extends: [
+    'universe',
+    'universe/shared/typescript-analysis',
+    'plugin:storybook/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
+  ],
+  plugins: ['storybook', '@tanstack/query'],
   rules: {
     semi: 'off',
+    '@tanstack/query/exhaustive-deps': 'error',
+    '@tanstack/query/prefer-query-object-syntax': 'error',
   },
   overrides: [
     {
@@ -12,5 +19,5 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['!.storybook'],
+  ignorePatterns: ['!.storybook', 'src/features/api/wanikani/**'],
 }
