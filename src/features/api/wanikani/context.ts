@@ -7,7 +7,9 @@ export type Context = {
     /**
      * Headers to inject in the fetcher
      */
-    headers?: object
+    headers?: {
+      authorization?: string
+    }
     /**
      * Query params to inject in the fetcher
      */
@@ -42,8 +44,14 @@ export function useContext<
     'queryKey' | 'queryFn'
   >,
 ): Context {
+  // TODO: implement authentication
+  const key = 'wanikani'
   return {
-    fetcherOptions: {},
+    fetcherOptions: {
+      headers: {
+        authorization: `Bearer ${key}`,
+      },
+    },
     queryOptions: {},
     queryKeyFn,
   }

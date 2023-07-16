@@ -46,6 +46,7 @@ export async function fetch<
       delete requestHeaders['Content-Type']
     }
 
+    // @ts-ignore
     const response = await window.fetch(`${baseUrl}${resolveUrl(url, queryParams, pathParams)}`, {
       signal,
       method: method.toUpperCase(),
