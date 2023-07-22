@@ -6,7 +6,7 @@ export const defaultTheme = {
   colors: {
     primary: palette.royalBlue,
     secondary: palette.neonPurple,
-    background1: palette.charcoal,
+    background1: palette.white,
     background2: palette.oxfordBlue,
     black: palette.black,
     white: palette.white,

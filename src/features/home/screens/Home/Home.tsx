@@ -10,15 +10,24 @@ import { useStyles } from '~/features/ui/theme/hooks/useStyles'
 const Home = () => {
   const { container } = useStyles(styles)
 
-  const { data } = useGetUser({})
-  const username = data?.data?.username
+  // const { data } = useGetUser({})
+  // const username = data?.data?.username
 
   return (
     <View style={container}>
-      <Text>Hello {username}</Text>
-      <Text style={{ ...fontsStyles.h0 }}>Header</Text>
+      {/* <Text>Hello {username}</Text> */}
+      <Text style={{ ...fontsStyles.h1 }}>Header 1</Text>
+      <Text style={{ ...fontsStyles.h2 }}>Header 2</Text>
+      <Text style={{ ...fontsStyles.h3 }}>Header 3</Text>
+      <Text style={{ ...fontsStyles.h4 }}>Header 4</Text>
+      <Text style={{ ...fontsStyles.h5 }}>Header 5</Text>
+      <Text style={{ ...fontsStyles.h6 }}>Header 6</Text>
       <Text style={{ ...fontsStyles.body }}>body</Text>
-      <Text style={{ ...fontsStyles.bodySmallBold }}>body</Text>
+      <Text style={{ ...fontsStyles.bodyLight }}>body light</Text>
+      <Text style={{ ...fontsStyles.button }}>button</Text>
+      <Text style={{ ...fontsStyles.link }}>link</Text>
+      <Text style={{ ...fontsStyles.bodySmall }}>button small</Text>
+      <Text style={{ ...fontsStyles.caption }}>caption</Text>
     </View>
   )
 }
