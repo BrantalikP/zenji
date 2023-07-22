@@ -5,6 +5,7 @@ import { SplashScreen } from 'expo-router'
 import { useEffect } from 'react'
 
 import { queryClient } from '~/config/queryClient'
+import { defaultTheme } from '~/features/ui/theme/themes'
 
 export const Provider = ({ children }) => {
   const [fontsLoaded] = useFonts({
@@ -22,7 +23,12 @@ export const Provider = ({ children }) => {
   if (!fontsLoaded) return null
 
   return (
-    <ThemeProvider>
+    <ThemeProvider
+      theme={defaultTheme}
+      options={{
+        baseWidth: 414,
+        baseHeight: 896,
+      }}>
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </ThemeProvider>
   )

@@ -1,6 +1,6 @@
-import { createStyle } from './utils/resize'
+import { createStyles } from '@brantalikp/rn-resize'
 
-export const fontsStyles = createStyle({
+export const fontsStyles = createStyles({
   h1: {
     fontFamily: 'HelveticaNeue-Bold',
     fontSize: 34,
