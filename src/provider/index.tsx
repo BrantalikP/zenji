@@ -1,18 +1,17 @@
+import { ThemeProvider } from '@brantalikp/rn-resize'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { useFonts } from 'expo-font'
 import { SplashScreen } from 'expo-router'
 import { useEffect } from 'react'
 
 import { queryClient } from '~/config/queryClient'
-import { ThemeProvider } from '~/contexts/Theme'
+import { defaultTheme } from '~/features/ui/theme/themes'
 
 export const Provider = ({ children }) => {
   const [fontsLoaded] = useFonts({
-    'Inter-Regular': require('assets/fonts/Inter-Regular.ttf'),
-    'Inter-Bold': require('assets/fonts/Inter-Bold.ttf'),
-    'Inter-Medium': require('assets/fonts/Inter-Medium.ttf'),
-    'Inter-SemiBold': require('assets/fonts/Inter-SemiBold.ttf'),
-    'Poppins-SemiBold': require('assets/fonts/Poppins-SemiBold.ttf'),
+    'HelveticaNeue-Bold': require('assets/fonts/HelveticaNeue-Bold.ttf'),
+    'HelveticaNeue-Regular': require('assets/fonts/HelveticaNeue-Regular.ttf'),
+    'HelveticaNeue-Thin': require('assets/fonts/HelveticaNeue-Thin.ttf'),
   })
 
   SplashScreen.preventAutoHideAsync()
@@ -24,7 +23,12 @@ export const Provider = ({ children }) => {
   if (!fontsLoaded) return null
 
   return (
-    <ThemeProvider>
+    <ThemeProvider
+      theme={defaultTheme}
+      options={{
+        baseWidth: 414,
+        baseHeight: 896,
+      }}>
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </ThemeProvider>
   )

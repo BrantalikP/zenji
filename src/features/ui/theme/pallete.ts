@@ -1,10 +1,8 @@
 export const palette = {
   // main
-  royalBlue: '#246BFD',
-  neonPurple: '#C25FFF',
-  charcoal: '#181A20',
-  oxfordBlue: '#262A34',
-
+  springWood: '#FAF8F5',
+  turquoiseBlue: '#69d2e7',
+  monteCarlo: '#7fc7af',
   // secondary
   lightPastelPurple: '#A06AF9',
   lavenderPink: '#FBA3FF',
@@ -13,6 +11,15 @@ export const palette = {
   lightLimeGreen: '#A5F59C',
   lightGoldenrod: '#FFDD72',
   lightCoral: '#FF968E',
+
+  //kanji colors
+  radicalRed: '#fe4365',
+  violetRed: '#e53883',
+  pictonBlue: '#38c8e5',
+
+  //text
+  brightGray: '3F414E',
+  santasGray: '#A1A4B2',
 
   // classics
   white: '#FFFFFF',

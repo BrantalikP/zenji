@@ -4,12 +4,13 @@ import { palette } from './pallete'
 
 export const defaultTheme = {
   colors: {
-    primary: palette.royalBlue,
-    secondary: palette.neonPurple,
-    background1: palette.charcoal,
-    background2: palette.oxfordBlue,
+    primary: palette.turquoiseBlue,
+    secondary: palette.monteCarlo,
+    background1: palette.springWood,
     black: palette.black,
     white: palette.white,
+    textPrimary: palette.santasGray,
+    textSecondary: palette.brightGray,
   },
   fonts: fontsStyles,
   metrics,
