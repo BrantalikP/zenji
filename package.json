@@ -1,7 +1,7 @@
 {
   "main": "expo-router/entry",
   "scripts": {
-    "start": "expo start",
+    "start": "sb-rn-get-stories && expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -11,9 +11,7 @@
     "type-check": "tsc --noEmit",
     "test": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "storybook-generate": "sb-rn-get-stories",
-    "storybook-watch": "sb-rn-watcher"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.25",
