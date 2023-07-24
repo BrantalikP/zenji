@@ -1,6 +1,6 @@
 import { fontsStyles } from './fontsStyles'
 import { metrics } from './metrics'
-import { palette } from './pallete'
+import { palette } from './palette'
 
 export const defaultTheme = {
   colors: {
