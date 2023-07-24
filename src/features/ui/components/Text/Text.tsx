@@ -1,7 +1,8 @@
 import React from 'react'
 import { Text as RNText } from 'react-native'
 
-const Text = (props) => {
+export interface IText {}
+const Text = (props: IText) => {
   return <RNText {...props} />
 }
 

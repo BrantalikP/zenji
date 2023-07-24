@@ -1,6 +1,7 @@
 import { useStyles } from '@brantalikp/rn-resize'
+import { Link } from 'expo-router'
 import React from 'react'
-import { View } from 'react-native'
+import { Pressable, View } from 'react-native'
 
 import { styles } from './styles'
 
@@ -28,6 +29,12 @@ const Home = () => {
       <Text style={{ ...fontsStyles.link }}>link</Text>
       <Text style={{ ...fontsStyles.bodySmall }}>button small</Text>
       <Text style={{ ...fontsStyles.caption }}>caption</Text>
+
+      <Link href="/storybook" asChild>
+        <Pressable>
+          <Text>Go to Storybook</Text>
+        </Pressable>
+      </Link>
     </View>
   )
 }
