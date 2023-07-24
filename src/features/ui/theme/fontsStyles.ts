@@ -66,3 +66,5 @@ export const fontsStyles = createStyles({
     lineHeight: 11.891,
   },
 })
+
+export type FontStylesKeys = keyof typeof fontsStyles
