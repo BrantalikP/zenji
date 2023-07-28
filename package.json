@@ -11,7 +11,8 @@
     "type-check": "tsc --noEmit",
     "test": "jest --watchAll",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "codegen:component": "hygen component new"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.25",
