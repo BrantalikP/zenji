@@ -20,6 +20,11 @@ export const parameters = {
       { name: 'black', value: 'black' },
     ],
   },
+  options: {
+    storySort: {
+      method: 'alphabetical',
+    },
+  },
 }
 
 const providerDecorator = (StoryFn) => (

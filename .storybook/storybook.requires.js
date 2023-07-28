@@ -11,10 +11,10 @@ import {
 global.STORIES = [
   {
     titlePrefix: "",
-    directory: "./.storybook/stories",
+    directory: "./src",
     files: "**/*.stories.?(ts|tsx|js|jsx)",
     importPathMatcher:
-      "^\\.[\\\\/](?:\\.storybook\\/stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(?:ts|tsx|js|jsx)?)$",
+      "^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(?:ts|tsx|js|jsx)?)$",
   },
 ];
 
@@ -48,7 +48,8 @@ try {
 
 const getStories = () => {
   return {
-    "./.storybook/stories/Text.stories.tsx": require("./stories/Text.stories.tsx"),
+    "./src/features/ui/components/Button/Button.stories.tsx": require("../src/features/ui/components/Button/Button.stories.tsx"),
+    "./src/features/ui/components/Text/Text.stories.tsx": require("../src/features/ui/components/Text/Text.stories.tsx"),
   };
 };
 

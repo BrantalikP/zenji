@@ -1,12 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react-native'
-
 import React from 'react'
 import { View } from 'react-native'
 
-import { Text, type IText } from '../../src/features/ui/components/Text'
+import { Text, type IText } from './Text'
 
 const meta: Meta<IText> = {
-  title: 'AppText',
+  title: 'Text',
   component: Text,
 }
 
