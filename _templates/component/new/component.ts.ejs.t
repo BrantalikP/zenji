@@ -7,6 +7,7 @@ to: src/features/<%= feature %>/<%= category %>/<%= name %>/<%= name %>.tsx
 %>
 import type { FC } from 'react'
 import { View } from 'react-native'
+
 import { Text } from '~/features/ui/components/Text'
 
 export interface <%= PropsInterface %> {
