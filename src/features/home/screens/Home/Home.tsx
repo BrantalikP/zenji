@@ -8,7 +8,6 @@ import { styles } from './styles'
 import { useGetUser } from '~/features/api/wanikani/components'
 import { Button } from '~/features/ui/components/Button'
 import { Text } from '~/features/ui/components/Text'
-import { fontsStyles } from '~/features/ui/theme/fontsStyles'
 const Home = () => {
   const { container } = useStyles(styles)
 
@@ -18,7 +17,7 @@ const Home = () => {
   return (
     <View style={container}>
       <Button label="Get Started" onPress={() => console.log('test')} />
-
+      <Text variant="h1">Home</Text>
       <Link href="/storybook" asChild>
         <Button variant="tertiary" label="Go to Storybook"></Button>
       </Link>

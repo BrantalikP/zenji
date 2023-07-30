@@ -26,8 +26,12 @@ const Button = React.forwardRef<ElementRef<typeof Link>, IButton>(
     const variantTextStyles = themedStyles[`${variant}Text`]
     const transformedLabel = disableUppercase ? label : label?.toUpperCase()
     return (
-      <Pressable style={[variantContainerStyles, containerStyles]} {...ref} {...props}>
-        <Text style={[variantTextStyles, textStyles]} variant="button">
+      <Pressable
+        testID="button"
+        style={[variantContainerStyles, containerStyles]}
+        {...ref}
+        {...props}>
+        <Text variant="button" style={[variantTextStyles, textStyles]}>
           {transformedLabel}
         </Text>
       </Pressable>

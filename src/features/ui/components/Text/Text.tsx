@@ -1,16 +1,14 @@
 import React from 'react'
 import { Text as RNText, TextProps } from 'react-native'
 
-import { getVariantStyles } from '../utils/getVariantStyles'
-
-import { FontStylesKeys } from '~/features/ui/theme/fontsStyles'
+import { FontStylesKeys, fontsStyles } from '~/features/ui/theme/fontsStyles'
 
 export interface IText extends TextProps {
   variant?: FontStylesKeys
 }
-const Text = ({ variant = 'bodyLight', ...restProps }: IText) => {
-  const variantStyles = getVariantStyles(variant)
-  return <RNText style={{ ...variantStyles }} {...restProps} />
+const Text = ({ variant = 'bodyLight', style, ...restProps }: IText) => {
+  const variantStyles = fontsStyles[variant]
+  return <RNText testID="text" style={[variantStyles, style]} {...restProps} />
 }
 
 export { Text }
