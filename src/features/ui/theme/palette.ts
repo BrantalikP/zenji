@@ -18,7 +18,7 @@ export const palette = {
   pictonBlue: '#38c8e5',
 
   //text
-  brightGray: '3F414E',
+  brightGray: '#3F414E',
   santasGray: '#A1A4B2',
 
   // classics
