@@ -16,9 +16,6 @@ const Welcome: FC<IWelcome> = () => {
   return (
     <View style={container}>
       <Text>Welcome</Text>
-      <Link href="/storybook" asChild>
-        <Button variant="tertiary" label="Go to Storybook"></Button>
-      </Link>
       <Button label="Get Started" onPress={() => console.log('test')} />
     </View>
   )

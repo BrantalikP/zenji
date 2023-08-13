@@ -6,6 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { styles } from './styles'
 
 import { Text } from '~/components'
+import { StorybookButton } from '~/components/StorybookButton'
 import { useGetUser } from '~/features/api/wanikani/components'
 const Home = () => {
   const { container } = useStyles(styles)
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <View style={[container, { paddingTop: insets.top }]}>
       <Text variant="h4">{`Welcome ${username}`}</Text>
+      <StorybookButton />
     </View>
   )
 }
