@@ -11,7 +11,7 @@ import { View } from 'react-native'
 
 import { styles } from './styles'
 
-import { Text } from '~/features/ui/components/Text'
+import { Text } from '~/components'
 
 export interface <%= PropsInterface %> {
   // TODO: define props

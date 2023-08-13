@@ -6,7 +6,7 @@ export const styles: MakeStylesProps<StylesKeys> = (theme) => ({
   container: {
     flex: 1,
     // justifyContent: 'space-between',
-    paddingHorizontal: theme.metrics.spacing.m,
+    paddingHorizontal: theme.spacing.m,
   },
   title: {},
   text: {},

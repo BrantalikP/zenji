@@ -14,7 +14,7 @@ export const defaultTheme = {
     inputBackground: palette.brightGray,
   },
   fonts: fontsStyles,
-  metrics,
+  spacing: metrics.spacing,
 }
 
 export type Theme = typeof defaultTheme

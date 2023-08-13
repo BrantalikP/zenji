@@ -5,6 +5,7 @@ import { Notification, NotificationActive } from './svg/notification'
 import { Plus } from './svg/plus'
 import { Project, ProjectActive } from './svg/project'
 import { Search, SearchActive } from './svg/search'
+import { Storybook } from './svg/storybook'
 import { hs, vs } from './utils/resize/resize'
 
 const iconsMap = {
@@ -17,6 +18,7 @@ const iconsMap = {
   Plus,
   Search,
   SearchActive,
+  Storybook,
 } as const
 
 export type IconsType = keyof typeof iconsMap
