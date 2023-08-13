@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-native'
 
-import { StorybookButton, type IStorybookButton } from './StorybookButton'
+import { StorybookButton } from './StorybookButton'
 
-const meta: Meta<IStorybookButton> = {
+const meta: Meta = {
   title: 'StorybookButton',
   component: StorybookButton,
   argTypes: {},
@@ -10,7 +10,7 @@ const meta: Meta<IStorybookButton> = {
 
 export default meta
 
-type Story = StoryObj<IStorybookButton>
+type Story = StoryObj
 
 export const Basic: Story = {
   storyName: 'Basic',
