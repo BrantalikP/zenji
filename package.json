@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "@brantalikp/rn-resize": "^0.3.0",
+    "@brantalikp/rn-resize": "^0.4.0",
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "@openapi-codegen/cli": "^2.0.0",
