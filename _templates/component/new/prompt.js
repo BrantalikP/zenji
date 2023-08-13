@@ -2,7 +2,7 @@ module.exports = [
   {
     type: 'select',
     // TODO: add more choices as we add new modules
-    choices: ['home', 'ui'],
+    choices: ['home', 'welcome', 'ui'],
     name: 'feature',
     message: `What is the component's feature?`,
   },

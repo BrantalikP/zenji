@@ -45,11 +45,11 @@ export function useContext<
   >,
 ): Context {
   // TODO: implement authentication
-  const key = 'wanikani'
+  const token = process.env.EXPO_PUBLIC_API_TOKEN ?? 'wanikani'
   return {
     fetcherOptions: {
       headers: {
-        authorization: `Bearer ${key}`,
+        authorization: `Bearer ${token}`,
       },
     },
     queryOptions: {},

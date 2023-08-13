@@ -3,6 +3,7 @@ import { QueryClientProvider } from '@tanstack/react-query'
 import { useFonts } from 'expo-font'
 import { SplashScreen } from 'expo-router'
 import { useEffect } from 'react'
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
 
 import { queryClient } from '~/config/queryClient'
 import { defaultTheme } from '~/features/ui/theme/themes'
@@ -23,13 +24,15 @@ export const Provider = ({ children }) => {
   if (!fontsLoaded) return null
 
   return (
-    <ThemeProvider
-      theme={defaultTheme}
-      options={{
-        baseWidth: 414,
-        baseHeight: 896,
-      }}>
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider
+        theme={defaultTheme}
+        options={{
+          baseWidth: 414,
+          baseHeight: 896,
+        }}>
+        <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      </ThemeProvider>
+    </SafeAreaProvider>
   )
 }
