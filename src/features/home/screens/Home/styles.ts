@@ -5,8 +5,8 @@ type StylesKeys = 'container' | 'title' | 'text'
 export const styles: MakeStylesProps<StylesKeys> = (theme) => ({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'space-between',
+    paddingHorizontal: theme.metrics.spacing.m,
   },
   title: {},
   text: {},
