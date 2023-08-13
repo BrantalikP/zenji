@@ -20,6 +20,8 @@ export const palette = {
   //text
   brightGray: '#3F414E',
   santasGray: '#A1A4B2',
+  athensGray: '#F2F3F7',
+  mischka: '#EBEAEC',
 
   // classics
   white: '#FFFFFF',

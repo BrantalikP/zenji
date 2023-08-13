@@ -11,6 +11,7 @@ export const defaultTheme = {
     white: palette.white,
     textPrimary: palette.santasGray,
     textSecondary: palette.brightGray,
+    inputBackground: palette.brightGray,
   },
   fonts: fontsStyles,
   metrics,
