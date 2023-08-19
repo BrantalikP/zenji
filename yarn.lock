@@ -1783,10 +1783,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@brantalikp/rn-resize@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@brantalikp/rn-resize/-/rn-resize-0.3.0.tgz#0b2ee1e659dc670a3ca3932bf05697f177010eaf"
-  integrity sha512-hjx/wmafdAkX5nvBMHbNu90gkArDNgXuH7q4ppWw3aMwU2Q6am8SSR8mE6qLuISf+VSiCeC3BH5VQHBZdDQs5A==
+"@brantalikp/rn-resize@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@brantalikp/rn-resize/-/rn-resize-0.4.0.tgz#f6d828326de89b55cd0f9fc677efb03b651a24c9"
+  integrity sha512-DwwQQqHRY0sM+ORIPtQTE5t9w7fXSkvnBc/ZUf0gEY3moA+bXhiYiILM0SL+XChaT5utlS8kKqS/NjMBryVGmg==
   dependencies:
     JSONStream "^1.3.5"
     abort-controller "^3.0.0"

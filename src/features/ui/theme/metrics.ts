@@ -1,6 +1,6 @@
 export const metrics = {
   spacing: {
-    '3xl': 40,
+    '3xl': 44,
     l: 24,
     m: 20,
   },
