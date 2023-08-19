@@ -49,6 +49,8 @@ try {
 const getStories = () => {
   return {
     "./src/components/StorybookButton/StorybookButton.stories.tsx": require("../src/components/StorybookButton/StorybookButton.stories.tsx"),
+    "./src/features/home/components/LessonAndReview/LessonAndReview.stories.tsx": require("../src/features/home/components/LessonAndReview/LessonAndReview.stories.tsx"),
+    "./src/features/home/components/parts/SelectTile/SelectTile.stories.tsx": require("../src/features/home/components/parts/SelectTile/SelectTile.stories.tsx"),
     "./src/features/ui/components/Button/Button.stories.tsx": require("../src/features/ui/components/Button/Button.stories.tsx"),
     "./src/features/ui/components/Input/Input.stories.tsx": require("../src/features/ui/components/Input/Input.stories.tsx"),
     "./src/features/ui/components/Text/Text.stories.tsx": require("../src/features/ui/components/Text/Text.stories.tsx"),
